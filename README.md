@@ -1,6 +1,6 @@
 # Diamond Pattern Algorithm Console Application
 
-This is a .NET Framework console application that demonstrates the generation of a diamond pattern when given a character from the alphabet, based on a post by Seb Rose. 
+This is a .Net Framework console application that demonstrates the generation of a diamond pattern when given a character from the alphabet, based on a post by Seb Rose. 
 
 For more information, you can visit the website by clicking [HERE](http://claysnow.co.uk/recycling-tests-in-tdd/).
 
@@ -30,7 +30,7 @@ This application serves as a practical example of leveraging modern C# features 
 
 ### Installation
 
-Step 1: Clone the Repository
+**Step 1: Clone the Repository**
 
 Clone the repository to your local machine using Git:
 
@@ -40,7 +40,8 @@ git clone <repository-url>
 
 _Replace <repository-url> with the actual URL of the Git repository_
 
-Step 2: Navigate to the Project Directory
+
+**Step 2: Navigate to the Project Directory**
 
 Open a terminal or command prompt and navigate into the project directory:
 
@@ -48,14 +49,15 @@ Open a terminal or command prompt and navigate into the project directory:
 cd DiamondPatternAlgorithmConsoleApplication
 ```
 
-Step 3: Build the Solution
 
-Build the solution using Visual Studio or .NET CLI:
+**Step 3: Build the Solution**
+
+Build the solution using Visual Studio or .Net CLI:
 
 Using Visual Studio:
 Open the solution file (DiamondPatternAlgorithmConsoleApplication.sln) in Visual Studio and build the solution
 
-Using .NET CLI
+Using .Net CLI
 Run the following command in your terminal or command prompt:
 
 ```
