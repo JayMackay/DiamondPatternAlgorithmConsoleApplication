@@ -20,23 +20,29 @@ namespace DiamondPatternAlgorithmConsoleApplication.Services
             // Radius is the distance from the center point of the 2D array of the diamond pattern
             int radius = characterInput - 'A';
 
-            // Width to calculate the maxium size of the diamond pattern
+            // Width to calculate the maxium size of the array
             int width = radius * 2 + 1;
 
-
+            // Create 2D array based on the width
             char[][] diamond = new char[width][];
 
-            for(int i = 0; i <= radius; i++)
-            {
-                diamond[i] = new string(' ', width).ToCharArray();
-                diamond[i][radius - i] = (char)('A' + i);
-                diamond[i][radius + i] = (char)('A' + i);
-            }
+            // Populate array
+            Enumerable.Range(0, radius + 1)
+                .ToList()
+                .ForEach(i =>
+                {
+                    diamond[i] = new string(' ', width).ToCharArray();
+                    diamond[i][radius - i] = (char)('A' + i);
+                    diamond[i][radius + i] = (char)('A' + i);
+                });
 
-            for(int i = radius - 1; i >= 0; i--)
-            {
-                diamond[width - i - 1] = diamond[i];
-            }
+            Enumerable.Range(0, radius)
+                .Reverse()
+                .ToList()
+                .ForEach(i =>
+                {
+                    diamond[width - i - 1] = diamond[i];
+                });
 
             return string.Join("\n", diamond.Select(row => new string(row))) + "\n";
         }
