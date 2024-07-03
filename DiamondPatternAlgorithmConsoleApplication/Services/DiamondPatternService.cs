@@ -1,4 +1,4 @@
-﻿using DiamondPatternAlgorithmConsoleApplication.Interfaces;
+using DiamondPatternAlgorithmConsoleApplication.Interfaces;
 using System;
 using System.Linq;
 
