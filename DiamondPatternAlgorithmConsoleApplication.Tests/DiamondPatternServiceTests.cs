@@ -72,7 +72,7 @@ namespace DiamondPatternAlgorithmConsoleApplication.Tests
         {
             // Arrange
             char invalidCharacter = '1';
-            string expectedErrorMessage = "Error: Please only input a single valid character from the alphabet.\r\n";
+            string expectedErrorMessage = "Please only input a single valid character from the alphabet.";
 
             // Act & Assert
             var ex = Assert.Throws<ArgumentException>(() => _diamondPatternService.BuildDiamond(invalidCharacter));
