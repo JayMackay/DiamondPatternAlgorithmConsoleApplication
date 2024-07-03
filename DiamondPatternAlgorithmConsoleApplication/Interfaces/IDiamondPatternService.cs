@@ -8,6 +8,6 @@ namespace DiamondPatternAlgorithmConsoleApplication.Interfaces
 {
     public interface IDiamondPatternService
     {
-        string BuildDiamond(char character);
+        string BuildDiamond(char characterInput);
     }
 }
